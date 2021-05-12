@@ -5,12 +5,12 @@
 main ()
 {
   
-    //declaraC'C#o das variC!veis
+    //variables
   int oper;
   
 float n1, n2, result;
   
-    // corpo do programa    
+    // program body    
     printf
     ("-----------------------------------------------------------\n\n");
   
@@ -42,107 +42,68 @@ scanf ("%d", &oper);
 printf ("-----------------------------------------------------------\n");
   
  
-    /* Estruturas condicionais if/else if 
-       que decidirC#o como o programa irC! se comportar */ 
+  
     
 if (oper == 1)
     
-      /* estrutura condicional "se"; 
-         caso seja uma condiC'C#o falsa, 
-         partirC! para a condiC'C#o else if atC) achar a condiC'C#o verdadeira */ 
-      
-    {
-      printf ("Please enter a number: ");	//pede entrada do usuC!rio
-      scanf ("%f", &n1);	//imprime na tela a entrada
-      
-printf ("Please enter another number: ");
-      
-scanf ("%f", &n2);
-      
-result = n1 + n2;
-    }				//cC!lculo das variC!veis inputadas pelo usuC!rio
-  
+     {
+      printf ("Please enter a number: ");	
+      scanf ("%f", &n1);	
+      printf ("Please enter another number: ");
+      scanf ("%f", &n2);
+      result = n1 + n2;
+    }			
+    
   else if (oper == 2)
     
     {
       printf ("Please enter a number: ");
-      
-scanf ("%f", &n1);
-      
- 
-printf ("Please enter another number: ");
-      
-scanf ("%f", &n2);
-      
-result = n1 - n2;
+      scanf ("%f", &n1);
+      printf ("Please enter another number: ");
+      scanf ("%f", &n2);
+      result = n1 - n2;
     }
   
  
- 
-  else if (oper == 3)
-    
- 
+   else if (oper == 3)
     {
       printf ("Please enter a number: ");
-      
-scanf ("%f", &n1);
-      
- 
-printf ("Please enter another number: ");
-      
-scanf ("%f", &n2);
-      
-result = n1 * n2;
+      scanf ("%f", &n1);
+      printf ("Please enter another number: ");
+      scanf ("%f", &n2);
+      result = n1 * n2;
     }
   
  
   else if (oper == 4)
-    
- 
     {
       printf ("Please enter a number: ");
-      
-scanf ("%f", &n1);
-      
- 
-printf ("Please enter another number: ");
-      
-scanf ("%f", &n2);
-      
-result = n1 / n2;
+      scanf ("%f", &n1);
+      printf ("Please enter another number: ");
+      scanf ("%f", &n2);
+      result = n1 / n2;
     }
   
  
   else if (oper == 5)
-    
- 
     {
       printf ("Please enter a percentage without '%':");
-      
-scanf ("%f", &n1);
-      
- 
-printf ("Please enter the number: ");
-      
-scanf ("%f", &n2);
-      
-result = (n1 * n2) / 100;
+      scanf ("%f", &n1);
+      printf ("Please enter the number: ");
+      scanf ("%f", &n2);
+      result = (n1 * n2) / 100;
     }
   
  
-    /* No caso de nenhuma condiC'C#o ser verdadeira o programa findarC! em else */ 
-    
   else
     {
       printf ("Not a valid operator! Please choose from 1 to 5.\n");
-    
-}
+    }
   
  
 printf (">>> Resolution: %.2f <<<", result);
   
-    //%.2f para decidir o nB: de casas decimais que quer imprimir apC3s o ponto flutuante;
-    //neste caso, somente duas.
+   
 
  
-}				// fim do programa; fechamento da "main".
+}			
